@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="overflow: visible; overflow: scroll;">
+
+
+<!---FIXME </div> = 40 ABER <div> = 41  //BUG -->
+
+    <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+
+    <body> 
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    
+    <style rel="stylesheet">
+   /*  @font-face {
+    font-family: 'my_underwoodregular';
+         url('myunderwood-webfont-wf.svg#my_underwoodregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+html {
+margin: 0;
+padding:0;
+	
+}
+
+/* ===================== =================== ==================*/
+ /* =====================  Basic align =================== */
+/* ===================== ======================== ============*/
+
+
+ /* =====================  make img scale to smaller screens =================== */
+.responsive{
+  max-width: 100%;
+  height: auto;
+} 
+
+ /* ===================== Screen divided into 3 parts --> deskIllustr., Kanban, Gallery =================== */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 2px 0px;
+  grid-template-areas:
+    "."
+    ".";
+}
+
+
+ /* =====================  Gallery: https://codepen.io/stefcharle/pen/Gydvbx =================== */
+ /*.grid-container-gallery {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+}*/
+
+
+.container {
+  padding: 75px 0;
+  margin: 0 auto;
+/*  width: 1140px; */
+  width: 90vw;
+  
+  	
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 45px;
+  /* font-family: "Helvetica", sans-serif; */
+  font-size: 44px;
+  /* text-transform: uppercase; */
+  color: #424242;
+  text-decoration-skip-ink: auto;
+  text-decoration: solid underline;
+  text-decoration-color: darkgrey ;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+    .item:hover {
+      flex: 7;
+    }
+
+    .item-1 {
+      background-image: url("https://cdn.statically.io/gh/Closer2U/vanilla_and_chocolate/master/assets/images/magic-fire.png");
+    }
+      .item-1:hover{
+        flex: 3.5;
+      }
+
+    .item-2 {
+      background-image: url("https://cdn.statically.io/gh/Closer2U/vanilla_and_chocolate/master/assets/images/2021-04-06-Potion.png");
+    }
+      .item-2:hover{
+        flex: 3.5;
+      }
+
+    .item-3 {
+      background-image: url("https://cdn.statically.io/gh/Closer2U/vanilla_and_chocolate/master/assets/images/2021-01-15-tinydancer.png");
+    }
+
+    .item-4 {
+      background-image: url("https://cdn.statically.io/gh/Closer2U/vanilla_and_chocolate/master/assets/images/2021-01-19-chameleon.png");
+    }
+
+    .item-5 {
+      background-image: url("https://cdn.statically.io/gh/Closer2U/vanilla_and_chocolate/master/assets/images/2021-01-26-paperpond.png");
+    }
+
+    .item-6 {
+      background-image: url("https://cdn.statically.io/gh/Closer2U/vanilla_and_chocolate/master/assets/images/2021-01-05-eis3.png");
+    }
+      .item-6:hover{
+          flex: 3.2;
+        }
+
+
+     </style> 
+
+
+    <div class="grid-container">
+
+
+
+ <!--===================== =================== ==========
+        ===============  DESK ILLUSTRATION ==================== 
+           ============= ======================== ============-->
+<div class="deskIllustrationHEADER" style="height: fit-content;">
+      <div  style="justify-content: center; margin-left: 15%; margin-right: 20%;"> 
+        <img id="illustration" class="responsive" alt="placeholder" src="desk-illustrationpredoneMINI.svg" width="1000" height="600"  />
+      </div>
+    
+</div>  
+
+ <div>
+                  <br /> 
+                    <hr />
+                  <br /><br />
+</div>
+
+
+
+ 
+
+        <!-- ===================== =================== ==========
+                ===============  GALLERY ==================== 
+                  ============= ======================== ============ -->
+      
+        <div class="container">
+          <h1>Some of my current other projects:</h1>
+
+          <div class="grid-container-gallery">
+          <div class="gallery-wrap">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+            <div class="item item-4"></div>
+            <div class="item item-5"></div>
+            <div class="item item-6"></div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    
+  
+
+
+
+</body>
+
+</html>
+    </div>
+    </foreignObject>
+</svg>
